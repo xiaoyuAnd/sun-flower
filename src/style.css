@@ -1,0 +1,119 @@
+.search{
+    margin: 20px; 
+}
+.form-search{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+@media (min-width :500px) {
+    .search{
+        margin: 100px; 
+    }
+    .form-search{
+        height: 40px;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.form-search > input{
+    width: 100%;
+    padding: 0 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.form-search > button{
+    white-space: nowrap;
+    font-size: 16px;
+    padding: 0 20px;
+    background-color: skyblue;
+    border-radius: 5px;
+}
+
+.content{
+    margin: 5px 20px;
+}
+.content > ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media (min-width :500px) {
+    .content{
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .content > ul{
+        margin-right: -25px;
+        justify-content: start;
+
+    }
+    .content .site{
+        margin-right: 25px;
+
+    }
+}
+.content .site{
+    background-color: #fff;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    position: relative;
+    border-radius: 20px;
+    /* margin-right: 25px; */
+    cursor: pointer;
+}
+.content .site .close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: none;
+    cursor: default;
+}
+.content .site:hover .close{
+    display: block;
+}
+.content .site .close .icon{
+    font-size: 20px;
+}
+.content .site .logo{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 10px;
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+/* .content .site .link{} */
+
+.content .addButton{
+    background-color: #fff;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+    border-radius: 20px;
+}
+.content .icon-wrapper{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.content .icon-wrapper .icon{
+    font-size: 46px;
+}
+
